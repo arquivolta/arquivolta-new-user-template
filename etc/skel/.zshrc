@@ -5,6 +5,10 @@ PURE_CMD_MAX_EXEC_TIME=2
 zstyle :prompt:pure:git:stash show yes
 prompt pure
 
+# Set up completions
+plugins=(zsh-completions)
+autoload -U compinit && compinit
+
 # Aliases and History
 HISTFILE=~/.zhistory
 HISTSIZE=5000
